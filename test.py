@@ -1,5 +1,5 @@
-"""Send requests for search queries, save data to DataFrame and CSV file.
-Uses arXiv API for querying research papers."""
+"""Testing the scraper on a small dataset to see if results are getting
+scraped correctly."""
 
 import pandas as pd
 import urllib.request
@@ -14,7 +14,7 @@ SEARCH_QUERY = "all:nanoparticles+AND+all:triple+negative+breast+cancer"
 RAW_CSV_PATH = "data/nano_tnbc_arxiv.csv"
 
 START = 0
-TOTAL_RESULTS = 10
+TOTAL_RESULTS = 5
 RESULTS_PER_ITERATION = 5
 WAIT_TIME = 3 
 
@@ -51,12 +51,12 @@ def fetch_records():
         # run through each entry, and extract necessary information
         for entry in feed.entries:
             arxivID = entry.id.split("/abs/")[-1]
-            date = entry.published
+            year = entry.published[:4] # only grab the year
             title = entry.title
             abstract = entry.summary
             
             results_dict["arXiv_id"].append(arxivID)
-            results_dict["Date_Published"].append(date)
+            results_dict["Date_Published"].append(year)
             results_dict["Title"].append(title)
             results_dict["Abstract"].append(abstract)
         

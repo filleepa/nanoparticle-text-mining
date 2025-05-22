@@ -21,7 +21,7 @@ def fetch_records():
     results_dict = {
         "arXiv_id":[],
         "Title":[],
-        "Date_Published":[],
+        "year":[],
         "Abstract":[]
     }
     
@@ -38,12 +38,12 @@ def fetch_records():
         # run through each entry, and extract necessary information
         for entry in feed.entries:
             arxivID = entry.id.split("/abs/")[-1]
-            date = entry.published
+            year = entry.published[:4] # only grab the year
             title = entry.title
             abstract = entry.summary
             
             results_dict["arXiv_id"].append(arxivID)
-            results_dict["Date_Published"].append(date)
+            results_dict["year"].append(year)
             results_dict["Title"].append(title)
             results_dict["Abstract"].append(abstract)
         

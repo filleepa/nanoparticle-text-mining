@@ -23,6 +23,7 @@ def fit_topics(df):
     
     df_out = df.copy()
     df_out["topic"] = pd.Series(topics, index=df.index)
+
     return model, df_out
 
 def get_rolling_df(df_topics, window=3, min_periods=1):

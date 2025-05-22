@@ -1,6 +1,6 @@
 arXiv_id,Title,Date_Published,Abstract
 0709.4061v2,"Scaling Analysis and Application: Phase Diagram of Magnetic Nanorings
-  and Elliptical Nanoparticles",2007-09-25T23:27:02Z,"The magnetic properties of single-domain nanoparticles with different
+  and Elliptical Nanoparticles",2007,"The magnetic properties of single-domain nanoparticles with different
 geometric shapes, crystalline anisotropies and lattice structures are
 investigated. A recently proposed scaling approach is shown to be universal and
 in agreement with dimensional analysis coupled with an assumption of {\em
@@ -16,7 +16,7 @@ parametrization for double vortex configurations is proposed, and regions in
 the phase diagram are identified where the double vortex is a stable ground
 state."
 2302.07392v2,"Stress-Induced Transformations of Polarization Switching in
-  CuInP$_2$S$_6$ Nanoparticles",2023-02-14T23:25:12Z,"Using the Landau-Ginzburg-Devonshire approach, we study stress-induced
+  CuInP$_2$S$_6$ Nanoparticles",2023,"Using the Landau-Ginzburg-Devonshire approach, we study stress-induced
 transformations of polarization switching in ferrielectric CuInP2S6
 nanoparticles for three different shapes: a disk, a sphere, and a needle.
 Semiconducting properties of a nanoparticle are modeled by a surface charge
@@ -39,7 +39,7 @@ promising for non-volatile multibit memory cells (in the regions of triple and
 pinched loops). The stress control of the polarization switching scenario
 allows the creation of advanced piezo-sensors based on CuInP2S6 nanocomposites."
 1708.05609v1,"GFEM study of magnetohydrodynamics thermo-diffusive effect on nanofluid
-  flow over power-law stretching sheet along with regression analysis",2017-08-18T13:44:49Z,"The present paper uses the Galerkin Finite Element Method to numerically
+  flow over power-law stretching sheet along with regression analysis",2017,"The present paper uses the Galerkin Finite Element Method to numerically
 study the triple diffusive boundary layer flow of homogenous nanofluid over
 power-law stretching sheet with the effect of external magnetic field. The
 fluid is composed of nanoparticles along with dissolved solutal particles in
@@ -59,7 +59,7 @@ products, rubber sheets etc. where the quality merit of desired product depends
 on the rate of stretching, external magnetic field and composition of materials
 used."
 2112.08660v1,"Equilibrium of Free Surfaces and Nanoparticles in Self-Consistent Field
-  Theory of Block Copolymers",2021-12-16T06:33:38Z,"This work presents a general and unified theory describing block copolymer
+  Theory of Block Copolymers",2021,"This work presents a general and unified theory describing block copolymer
 self-assembly in the presence of free surfaces and nanoparticles in the context
 of Self-Consistent Filed Theory. Specifically, the derived theory applies to
 free and tethered polymer chains, nanoparticles of any shape, arbitrary
@@ -74,7 +74,7 @@ such as the meniscus formation in the graphoepitaxy and the co-assembly of
 ""polarized"" nano-rods and diblock copolymer melts."
 1207.2023v2,"Dynamic phase transition properties and hysteretic behavior of a
   ferrimagnetic core-shell nanoparticle in the presence of a time dependent
-  magnetic field",2012-07-09T12:22:58Z,"We have presented dynamic phase transition features and stationary-state
+  magnetic field",2012,"We have presented dynamic phase transition features and stationary-state
 behavior of a ferrimagnetic small nanoparticle system with a core-shell
 structure. By means of detailed Monte Carlo simulations, a complete picture of
 the phase diagrams and magnetization profiles have been presented and the
@@ -96,76 +96,3 @@ compensation temperature of the particle. We have found that in the presence of
 ultrafast switching fields, the particle may exhibit a dynamic phase transition
 from paramagnetic to a dynamically ordered phase with increasing ferromagnetic
 shell thickness."
-1701.04672v4,Hot spot-mediated non-dissipative and ultrafast plasmon passage,2017-01-17T13:56:39Z,"Plasmonic nanoparticles hold great promise as photon handling elements and as
-channels for coherent transfer of energy and information in future all-optical
-computing devices. Coherent energy oscillations between two spatially separated
-plasmonic entities via a virtual middle state exemplify electron-based
-population transfer, but their realization requires precise nanoscale
-positioning of heterogeneous particles. Here, we show the assembly and optical
-analysis of a triple particle system consisting of two gold nanoparticles with
-an inter-spaced silver island. We observe strong plasmonic coupling between the
-spatially separated gold particles mediated by the connecting silver particle
-with almost no dissipation of energy. As the excitation energy of the silver
-island exceeds that of the gold particles, only quasi-occupation of the silver
-transfer channel is possible. We describe this effect both with exact classical
-electrodynamic modeling and qualitative quantum-mechanical calculations. We
-identify the formation of strong hot spots between all particles as the main
-mechanism for the loss-less coupling and thus coherent ultra-fast energy
-transfer between the remote partners. Our findings could prove useful for
-quantum gate operations, but also for classical charge and information transfer
-processes."
-2003.06230v1,"(Super)Spreading and drying of trisiloxane-laden quantum dot nanofluids
-  on hydrophobic surfaces",2020-03-09T08:48:32Z,"Nanofluids hold promise for a wide range of areas of industry. However,
-understanding of wetting behavior and deposition formation in course of drying
-and spreading of nanofluids, particularly containing surfactants, is still
-poor. In this paper, the evaporation dynamics of quantum dot-based nanofluids
-and evaporation-driven self-assembly in nanocolloidal suspensions on
-hexamethyldisilazane-, polystyrene-, and polypropylene-coated hydrophobic
-surfaces have been studied experimentally. Moreover, for the very first time,
-we make a step to understanding of wetting dynamics of superspreader
-surfactant-laden nanofluids. It was revealed that drying of surfactant-free
-quantum dot nanofluids in contrast to pure liquids undergoes not three but four
-evaporation modes including last additional pinning mode when contact angle
-decreases whilst triple contact line is pinned by the nanocrystals. In contrast
-to previous studies, it was found out that addition of nanoparticles to aqueous
-surfactant solutions leads to deterioration of spreading rate and to formation
-of double coffee ring. For all surfaces examined, superspreading in presence
-and absence of quantum dot nanoparticles takes place. Despite the formation of
-coffee rings on all substrates, they have different morphology. Particularly,
-the knot-like structures are incorporated into the ring on
-hexamethyldisilazane- and polystyrene-coated surfaces"
-0904.0442v2,"Microstructure-dependent local strain behavior in polycrystals through
-  in situ scanning electron microscope tensile experiments",2009-04-02T20:04:53Z,"Digital image correlation of laser-ablated platinum nanoparticles on the
-surface of a polycrystalline metal (nickel-based superalloy Rene 88DT) was used
-to obtain the local strain behavior from an in situ scanning electron
-microscope tensile experiment at room temperature. By fusing this information
-with crystallographic orientations from EBSD, a subsequent analysis shows that
-the average maximum shear strain tends to increase with increasing Schmid
-factor. Additionally, the range of the extreme values for the maximum shear
-strain also increases closer to the grain boundary, signifying that grain
-boundaries and triple junctions accumulate plasticity at strains just beyond
-yield in polycrystalline Rene 88DT. In situ experiments illuminating
-microstructure-property relationships of this ilk may be important for
-understanding damage nucleation in polycrystalline metals at high temperatures."
-1302.5897v2,Phase diagram for a single flexible Stockmayer polymer at zero field,2013-02-24T11:53:25Z,"The equilibrium conformations of a flexible permanent magnetic chain that
-consists of a sequence of linked magnetic colloidal nanoparticles with
-short-ranged Lennard-Jones attractive interactions (Stockmayer polymer) are
-thoroughly analysed via Langevin dynamics simulations. A tentative phase
-diagram is presented for a chain of length $N=100$. The phase diagram exhibits
-several unusual conformational phases when compared with the non-magnetic
-chains. These phases are characterised by a large degree of conformational
-anisotropy, and consist of closed chains, helicoidal-like states, partially
-collapsed states, and very compact disordered states. The phase diagram
-contains several interesting features like the existence of at least two
-'triple points'."
-1506.00258v1,"Using core-shell metamaterial engineering to triple the critical
-  temperature of a superconductor",2015-05-31T17:31:31Z,"Recent experiments have shown the viability of the metamaterial approach to
-dielectric response engineering for moderately enhancing the transition
-temperature, Tc, of a superconductor. In this report, we demonstrate the use of
-Al2O3-coated aluminium nanoparticles to form the recently proposed epsilon near
-zero (ENZ) core-shell metamaterial superconductor with a Tc that is three times
-that of pure aluminium. IR reflectivity measurements confirm the predicted
-metamaterial modification of the dielectric function thus demonstrating the
-efficacy of the ENZ metamaterial approach to Tc engineering. These results
-provide an explanation for the long known, but not understood, enhancement of
-the Tc of granular aluminum films."
