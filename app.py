@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 import plotly.express as px
 from data_utils import fetch_records, save_raw
 from config import RAW_CSV_PATH
@@ -7,6 +8,12 @@ from preprocess import add_clean_column
 from modeling import fit_topics, get_rolling_df
 import time
 from wordcloud import WordCloud
+
+label_map = {
+    0: "Drug Delivery & Cancer Treatment",
+    1: "Magnetic Hyperthermia & Imaging",
+    2: "Plasmonic Photothermal Therapy",
+    }
 
 def load_and_topic_model():
     """
@@ -19,11 +26,7 @@ def load_and_topic_model():
     df = add_clean_column(pd.read_csv(RAW_CSV_PATH))
     model, df_topics = fit_topics(df)
     
-    label_map = {
-    0: "Drug Delivery & Cancer Treatment",
-    1: "Magnetic Hyperthermia & Imaging",
-    2: "Plasmonic Photothermal Therapy",
-    }
+    
     df_topics["topic"] = df_topics["topic"].map(label_map).fillna("Other")
     rolling_df = get_rolling_df(df_topics)
     
@@ -40,7 +43,15 @@ def load_and_topic_model():
     # ])
     # st.write(df_topics)
     
-    return rolling_df
+    return model, rolling_df
+
+def plot_topic_wordcloud(model, topic_id):
+    words = dict(model.get_topic(topic_id))
+    wc = WordCloud(width=300, height=200).generate_from_frequencies(words)
+    fig, ax = plt.subplots(figsize=(3,2))
+    ax.imshow(wc, interpolation="bilinear")
+    ax.axis("off")
+    return fig
 
 
 def main():
@@ -48,20 +59,22 @@ def main():
     st.markdown("Prototype app: fetch, clean, topic-model & visualize trends.")
 
     if st.button("Fetch & Preprocess Data"):
-        st.session_state.rolling_df = load_and_topic_model()
+        model, rolling_df = load_and_topic_model()
+        st.session_state["model"] = model
+        st.session_state["rolling_df"] = rolling_df
 
 
-    if "rolling_df" in st.session_state:
-        rolling_df = st.session_state.rolling_df
+    if "model" in st.session_state and "rolling_df" in st.session_state:
+        model = st.session_state["model"]
+        rolling_df = st.session_state["rolling_df"]
         
         # sidebar controls
         all_topics = list(rolling_df.columns)
-        default_topics = all_topics[:5]
         
         topics = st.sidebar.multiselect(
             "Topics", 
             all_topics, 
-            default=default_topics
+            default=all_topics
             )
         yrs = st.sidebar.slider("Year range", 
                                 int(min(rolling_df.index)), 
@@ -81,6 +94,13 @@ def main():
         )
         fig.update_layout(legend_title_text="Topic")
         st.plotly_chart(fig, use_container_width=True)
+        
+        # wordclouds
+        st.header("Topic Word-Clouds")
+        for tid, label in label_map.items():
+            st.subheader(label)
+            st.pyplot(plot_topic_wordcloud(model, tid))
+            
     else:
         st.info("Click 'Fetch & Preprocess Data' to load and analyse the corpus.")
     
